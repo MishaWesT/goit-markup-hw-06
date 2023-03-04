@@ -24,6 +24,7 @@
         --footer-background-color: #2E2F42;
         --footer-text-color: #E7E9FC;
         --portfolio-btn-border-color: #E7E9FC;
+        --close-icon-bg-color:#E7E9FC;
         --portfolio-btn-hover-focus:#FFFFFF;
         --portfolio-btn-hover-focus-bg: #4D5AE5;
         --project-card-color: #2E2F42;
@@ -609,7 +610,7 @@ img {
         padding: 0;
         align-items: center;
         cursor: pointer;
-        background-color:var(--color-border-cart-portfolio);
+        background-color:var(--button-hover-background);
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         transition:background-color var(--time-transition);
@@ -617,6 +618,7 @@ img {
 
 .close-button:is(:hover, :focus) {
         background-color:var(--button-hover-background);
+        fill:var(--button-color);
 }
 
 .is-hidden{
@@ -654,6 +656,7 @@ img {
 }
 
 .input-block-footer {
+        color: #F4F4FD;
         display: flex;
         gap: 24px;
         margin-left: auto;
@@ -718,7 +721,7 @@ img {
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
-        color:var(--title-color-hhh);
+        color:var(--hero-title-color);
         margin-top: 24px;
         margin-bottom: 16px;
 }
@@ -759,7 +762,7 @@ img {
 }
 
 .modal-input:focus + .modal-icon {
-        fill:var(--button-hover-background)
+        fill:var(--button-hover-background);
 }
 
 .modal-icon {
